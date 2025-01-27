@@ -66,32 +66,39 @@ This starts the NestJS application and logs the bots into Discord.
 
 Bot Initialization (Example from Discordbot1Service)
 
-The bot logs in using the specified DISCORD_TOKEN1 and listens for incoming messages:
+### Bot Initialization
 
+The bot logs in using the specified `DISCORD_TOKEN1` and listens for incoming messages:
+
+```typescript
 this.client = new Client({
-intents: ['Guilds', 'GuildMessages', 'DirectMessages', 'MessageContent'],
+  intents: ['Guilds', 'GuildMessages', 'DirectMessages', 'MessageContent'],
 });
 this.client.login(token);
 this.client.once('ready', this.onReady);
 this.client.on('messageCreate', this.handleRecievedMessages);
+```
 
-AI-Driven Responses
+## AI-Driven Responses
 
 When a bot receives a message, it uses the NpcAgentService to generate a reply:
 
+```typescript
 const npcAgent1 = await this.agentService.npcAgent1(
-`${message.content.trim()}`,
+  `${message.content.trim()}`,
 );
 if (npcAgent1.reply) {
-const channel = this.client.channels.cache.get(
-`process.env.BOT_CHANNEL_ID`,
-);
-if (channel?.isTextBased()) {
-setTimeout(async () => {
-return await (<TextChannel>channel).send(`${npcAgent1.reply}`);
-}, Number(process.env.CHAT_RESPONSE_TIME) || 1000);
+  const channel = this.client.channels.cache.get(`process.env.BOT_CHANNEL_ID`);
+  if (channel?.isTextBased()) {
+    setTimeout(
+      async () => {
+        return await (<TextChannel>channel).send(`${npcAgent1.reply}`);
+      },
+      Number(process.env.CHAT_RESPONSE_TIME) || 1000,
+    );
+  }
 }
-}
+```
 
 🛡️ Notes on Security
 • Keep your .env file private. Do not expose sensitive data like bot tokens and API keys.
@@ -108,3 +115,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 💬 Questions or Feedback?
 
 Feel free to raise an issue on the repository or contact us directly for assistance.
+
+```
+
+```
