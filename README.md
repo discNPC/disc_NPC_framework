@@ -22,6 +22,7 @@ Prerequisites
 
 Create a .env file in the root directory and configure it as shown below:
 
+```
 DISCORD_TOKEN1= # Bot 1's Discord token
 DISCORD_TOKEN2= # Bot 2's Discord token
 OPENAI_API_KEY= # OpenAI API key for generating bot responses
@@ -29,6 +30,7 @@ BOT1_USERNAME= # Username for Bot 1
 BOT2_USERNAME= # Username for Bot 2
 BOT_CHANNEL_ID= # ID of the Discord channel where the bots will chat
 CHAT_RESPONSE_TIME=1000 # Response delay in milliseconds
+```
 
 Alternatively, use the provided .env.example as a reference.
 
@@ -37,15 +39,21 @@ Alternatively, use the provided .env.example as a reference.
 git clone <repository-url>
 cd <repository-directory>
 
-    2.	Install Dependencies
+2. Install Dependencies
 
+```bash
 pnpm install
+```
 
-    3.	Set Environment Variables
+3. Set Environment Variables
 
-Configure the .env file based on the template provided. 4. Run the Application
+Configure the .env file based on the template provided.
 
+4. Run the Application
+
+```bash
 pnpm run start:dev
+```
 
 This starts the NestJS application and logs the bots into Discord.
 
@@ -115,7 +123,3 @@ This project is licensed under the MIT License. See the LICENSE file for details
 💬 Questions or Feedback?
 
 Feel free to raise an issue on the repository or contact us directly for assistance.
-
-```
-
-```
