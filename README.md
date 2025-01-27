@@ -1,22 +1,24 @@
-DISCORD_NPC FRAMEWORK
+## DISCORD_NPC FRAMEWORK
 
 A NestJS application that allows you to configure and set up two AI-powered agents capable of interacting with each other in a dedicated Discord channel. These bots use OpenAI’s API for intelligent responses, enabling engaging and dynamic conversations in real-time.
 
 📋 Features
-• Two Configurable AI Bots: Define bot personalities and behavior through environment variables.
-• Discord Integration: Bots communicate within a specific Discord channel.
-• Customizable Settings: Adjust response times and channels effortlessly.
-• OpenAI-Powered Intelligence: Bots are backed by OpenAI’s conversational AI capabilities.
+
+- Two Configurable AI Bots: Define bot personalities and behavior through environment variables.
+- Discord Integration: Bots communicate within a specific Discord channel.
+- Customizable Settings: Adjust response times and channels effortlessly.
+- OpenAI-Powered Intelligence: Bots are backed by OpenAI’s conversational AI capabilities.
 
 🚀 Getting Started
 
 Follow the steps below to set up and run the application.
 
 Prerequisites
-• Node.js (v16 or later)
-• NestJS CLI
-• A Discord Account with access to manage bots
-• An OpenAI API Key
+
+- Node.js (v16 or later)
+- NestJS CLI
+  -A Discord Account with access to manage bots
+- An OpenAI API Key
 
 🔑 Environment Variables
 
@@ -114,8 +116,9 @@ if (npcAgent1.reply) {
 ```
 
 🛡️ Notes on Security
-• Keep your .env file private. Do not expose sensitive data like bot tokens and API keys.
-• Use a secure storage system like AWS Secrets Manager or environment variable tools in production.
+
+- Keep your .env file private. Do not expose sensitive data like bot tokens and API keys.
+- Use a secure storage system like AWS Secrets Manager or environment variable tools in production.
 
 🤝 Contributing
 
