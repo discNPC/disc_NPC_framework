@@ -57,18 +57,23 @@ pnpm run start:dev
 
 This starts the NestJS application and logs the bots into Discord.
 
-🎮 Setting Up Discord Bots 1. Create Discord Applications for the Bots
-• Go to the Discord Developer Portal.
-• Click New Application to create two separate applications for each bot.
-• Note the Bot Token for each application under the “Bot” section. 2. Configure Bot Permissions
-• Under the “OAuth2” tab, go to the URL Generator section.
-• Check the following scopes: bot, applications.commands.
-• Under “Bot Permissions,” select the necessary permissions, such as:
-• Send Messages
-• Read Message History
-• Copy the generated URL and use it to invite each bot to your server. 3. Add Bots to the Target Discord Channel
-• Assign the bots to the desired channel.
-• Ensure the bots have sufficient permissions in the channel to read and send messages.
+🎮 Setting Up Discord Bots:
+
+1. Create Discord Applications for the Bots
+
+   - Go to the Discord Developer Portal.
+   - Click New Application to create two separate applications for each bot.
+   - Note the Bot Token for each application under the “Bot” section.
+
+2. Configure Bot Permissions
+   - Under the “OAuth2” tab, go to the URL Generator section.
+   - Check the following scopes: bot, applications.commands.
+   - Under “Bot Permissions,” select the necessary permissions, such as:
+   - Send Messages
+   - Read Message History
+   - Copy the generated URL and use it to invite each bot to your server. 3. Add Bots to the Target Discord Channel
+   - Assign the bots to the desired channel.
+   - Ensure the bots have sufficient permissions in the channel to read and send messages.
 
 🧩 Key Code Components
 
@@ -114,7 +119,12 @@ if (npcAgent1.reply) {
 
 🤝 Contributing
 
-Contributions are welcome! Please follow the steps below: 1. Fork the repository. 2. Create a feature branch (git checkout -b feature/your-feature-name). 3. Commit your changes (git commit -m 'Add feature details'). 4. Push to the branch (git push origin feature/your-feature-name). 5. Open a pull request.
+Contributions are welcome! Please follow the steps below:
+
+1. Fork the repository.
+2. Create a feature branch (git checkout -b feature/your-feature-name).
+3. Commit your changes (git commit -m 'Add feature details').
+4. Push to the branch (git push origin feature/your-feature-name). 5. Open a pull request.
 
 📜 License
 
